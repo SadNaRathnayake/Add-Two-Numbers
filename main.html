@@ -2,21 +2,7 @@
 <html>
 <head>
 
-	<script type="text/javascript">
-		
-
-		var box1 = document.getElementById("box1");
-		var box2 = document.getElementById("box2");
-		
-
-		var result = Number(box1.value) + Number(box2.value);
-
-		box3.innerHTML = result ;
-
-
-
-
-	</script>
+	
 
 <title>Plus me</title>
 <style>
@@ -35,10 +21,38 @@
 </head>
 <body>
 
-		<input id ="box1" type= "text"/> &nbsp + &nbsp <input id ="box2" type="text"/> &nbsp = &nbsp <input id="box3" type ="text"/> &nbsp &nbsp <input type="button" value="Add" onclick="add()"/>
+		<input id ="box1" type= "text"/>&nbsp + &nbsp
+		<input id ="box2" type="text"/>&nbsp + &nbsp
+		<input id="box3" type ="text"/>&nbsp &nbsp 
+		<input type="button" value="Add" onclick="add()"/>
 
 </body>
 </html>
+
+
+<script type="text/javascript">
+		function add(box1, box2) {
+		return box1+box2;
+}
+
+
+		var box1 = document.getElementById("box1");
+		var box2 = document.getElementById("box2");
+		var box3 = document.getElementById("box3");
+		
+		
+		function add(){
+			var result = Number(box1.value)+Number(box2.value);
+			box3.value = result;
+		}
+
+
+
+
+	</script>
+
+
+
 
 
 
